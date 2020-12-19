@@ -1,0 +1,249 @@
+/* media queries */
+  
+ @media  only screen and (max-width:676px)
+ {
+     .welcometextcontainer{
+         padding-left:  30px !important;
+         padding-right: 30px !important;
+     }
+     .welcometext{
+         font-size:50px !important;
+     }
+     .headerhero{
+         background-image: none !important;
+     }
+ }
+
+
+/* end media queries */
+
+/* fonts */
+
+ /* title font */
+ @font-face{
+     font-family: "twcenmt";
+     src: url("../fonts/twcenmt/TwCenClassMTStd-Regular.otf");
+ }
+ 
+ /* paragraph font */
+ @font-face {
+     font-family: "montserrat";
+     src: url("../fonts/montserrat/Montserrat-Regular.woff");
+ }
+
+/* end fonts */
+
+
+/* general style */
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  /*  background-color: #f8f9fa;*/
+    line-height:1.5;
+    font-size:1rem;
+    font-family: "montserrat";
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "twcenmt";
+}
+
+a,p,span,li,div,article,aside,button{font-family: "montserrat" !important;}
+
+
+ .p0{padding: 0;}
+
+ .text-beige{
+    color: #f7edef !important;
+ }
+
+ .text-gray{
+     color:gray !important;
+ }
+
+ .bg-beige{
+     background-color:#f7edef !important;
+ }
+ .text-purple{
+     color:#230e86 !important;
+ }
+ .bg-purple{
+     background-color: #230e86 !important;
+ }
+ .bg-gray{
+    background-color: #f8f9fa !important;
+ }
+ .font-bold{font-weight: bold !important;}
+
+ .overlay{
+    position: absolute; /* Sit on top of the page content */
+    visibility: hidden; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 0%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .6;
+    transition: .1s ease;
+    background-color: #230e86; /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+ }
+
+ 
+
+ 
+
+/* end general style*/
+
+
+
+/* headerhero style */
+
+ .headerhero{
+     min-height: 655px;
+     background-image: url("../images/barberbgg.png");
+     background-repeat: no-repeat;
+     background-size:100% 100%;
+     background-color: #230e86;
+     padding-bottom: 110px;
+
+ }
+
+ .navbar{
+     padding:40px;
+     background-color: transparent;
+ }
+ .navbar-expand-lg .navbar-nav .nav-link:hover{
+     color:#edd5d9 !important;
+ }
+
+ .welcometextcontainer{padding-left: 80px;}
+
+ .welcometext{
+     font-size: 80px;
+ }
+
+ .watchvidbtn{
+     color: #f7edef;
+     border-color: #f7edef;
+     
+
+ }
+ .watchvidbtn:hover{
+     color: #6c739d;
+     background-color: #f7edef;
+ }
+
+ .watchvidbtn:focus{
+     color:#f7edef;
+ }
+
+ .ordernowbtn{
+    color:#230e86;
+    border-color:#230e86;
+ }
+
+ .ordernowbtn:hover{
+     color:#f7edef;
+     background-color: #230e86;
+ }
+ .ordernowbtn:focus{
+     color:#230e86;
+ }
+
+ .contactusbtn{
+     color:#f7edef;
+     background-color: #230e86;
+     border-color: #230e86;
+ }
+ .contactusbtn:hover{
+     color: #6c739d;
+     background-color: #f7edef;
+ }
+
+ 
+
+
+/* end headerhero style */
+
+
+/* barbers style */
+
+  .barber-image{
+    max-height: 350px !important;
+     width:100% !important;
+     height:350px !important;
+  }
+
+/* end barbers style */
+
+
+
+/* styling gallery section */
+
+.gallery-image-container{
+    cursor: pointer;
+}
+
+ .gallery-image{
+    opacity: 1;
+    width: 100% !important;
+     height:230px !important;
+      max-height: 230px !important;
+      transition: .5s ease;
+      backface-visibility: hidden;
+ } 
+
+ .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .gallery-image-container:hover .gallery-image {
+    opacity: 0.3;
+  }
+  
+  .gallery-image-container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #230e86;
+    color:#f7edef;
+    font-size: 16px;
+    /*padding: 16px 32px;*/
+  }
+
+
+  .img-link:hover{
+      color:#edd5d9;
+  }
+
+
+/* end gallery section */
+
+
+
+
+
+
+/*  pricing style  */
+
+ .pricing-card{
+     width:100%;
+     height:618px;
+     background-image: url("../images/barbertools2.png");
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+ }
+
+/* end pricing style */
